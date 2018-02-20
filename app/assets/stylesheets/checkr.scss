@@ -1,80 +1,46 @@
 
-// .background-image {
-//   background-image: url('http://www.image-heberg.fr/files/1519157083596505800.jpg');
-//   background-size: cover;
-// }
-
-
-#conteneur
-{
-
+#header {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content:space-around;
-  align-content: stretch;
-  background-color: lightblue;
-    margin-top: 150px
+height:120px; width: 100%;
+background-color: rgba(0, 0, 255, 0.4);
+}
+.logo {
+ float: left; margin-left: 70px;
+}
+.menu{
 
 }
 
-@media all and (min-width: 800px) {
-  /* We invert order of first sidebar and main
-   * And tell the main element to take twice as much width as the other two sidebars
-   */
-  article { flex: 7px; }
-  header { order: 1; }
-  article   { order: 2; }
-  .navbar { order: 3; }
-  aside { order: 4; }
+#content{
+
+  justify-content: space-around;
+  background-color: rgba(0, 0, 255, 0.4);
+
+}
+
+#content2{
+   flex-direction:row;
+   background-color: rgba(0, 0, 255, 0.4);
+
+}
+
+#content3{
+  align-content: flex-end;
+  background-color: rgba(0, 0, 255, 0.4);
+}
+
+.navbar{
+  margin-top:70px;
 }
 
 
-header {
-   order: 1;
-  display:flex;
-  align-content:stretch;
-  background-color: red;
-
-  }
 
 .navbar {
     overflow: hidden;
     background-color: lightblue;
     font-family: Arial, Helvetica, sans-serif;
     align-content: stretch;
-
-}
-
-article {
-
-   align-content: stretch;
-   background-color: yellow;
-   p {
-     text-align: left;
-     color: white;
-   }
-
-   h1{
-     color:white;
-   }
-
-  .bouton {
-    color : blue;
-    box-shadow:red;
-    border-radius:300px;
   }
-
-}
-
-aside {
-
-  flex-direction: column;
-  align-content: stretch;
-  background-color: orange;
-
-}
-
 
 
 
